@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Auto Centro y Taller Universal - Servicio mecánico de confianza. Mecánica general, frenos, suspensión, alineación, balanceo y más. ¡Contáctanos por WhatsApp!">
+    <meta name="keywords"
+        content="taller automotriz, mecánica, frenos, suspensión, revisión vehicular, servicio automotriz">
+    <title>Auto Centro y Taller Universal | Servicio Automotriz Profesional</title>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ============================================
+         HEADER - Navegación fija / Sticky
+    ============================================= -->
+    <header class="header" id="header">
+        <div class="container header__inner">
+            <!-- Logo -->
+            <a href="#inicio" class="header__logo" aria-label="Auto Centro y Taller Universal - Inicio">
+                <span class="logo__text"><strong>Auto </strong> <strong>Centro </strong> <strong>Y </strong>
+                    <strong>Taller </strong> <strong>Universal </strong>
+                </span>
+            </a>
+
+            <!-- Botón menú hamburguesa (mobile) -->
+            <button class="header__menu-toggle" id="menuToggle" aria-label="Abrir menú de navegación"
+                aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <!-- Navegación principal -->
+            <nav class="header__nav" id="mainNav" aria-label="Navegación principal">
+                <ul class="nav__list">
+                    <li><a href="#inicio" class="nav__link">Inicio</a></li>
+                    <li><a href="#servicios" class="nav__link">Servicios</a></li>
+                    <li><a href="#mecanicos" class="nav__link">Equipos</a></li>
+                    <li><a href="#horarios" class="nav__link">Horarios</a></li>
+                    <li><a href="#contacto" class="nav__link">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <!-- Botón WhatsApp en header -->
+            <!-- ⚠️ CAMBIAR EL NÚMERO DE WHATSAPP: Reemplaza 507XXXXXXXX con tu número real -->
+            <a href="https://wa.me/50768838906?text=Hola%2C%20quiero%20saber%20sobre"
+                class="btn btn--accent header__cta" target="_blank" rel="noopener noreferrer"
+                aria-label="Contáctanos por WhatsApp">
+                <span class="whatsapp-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                        <path
+                            d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.1 1.514 5.828L0 24l6.335-1.48A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.887 9.887 0 0 1-5.031-1.378l-.361-.214-3.741.981.998-3.648-.235-.374A9.86 9.86 0 0 1 2.1 12c0-5.464 4.436-9.9 9.9-9.9 5.465 0 9.9 4.436 9.9 9.9 0 5.464-4.435 9.9-9.9 9.9z" />
+                    </svg>
+                </span>
+                ! Escribenos, resolvemos tus dudas !
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- ============================================
+             HERO SECTION - Sección principal
+        ============================================= -->
+        <section class="hero" id="inicio">
+            <div class="hero__overlay"></div>
+            <div class="container hero__content">
+                <h1 class="hero__title">Tu Vehículo en las <span class="text-accent">Mejores Manos</span></h1>
+                <p class="hero__subtitle">Más de 15 años brindando servicio automotriz profesional, con técnicos
+                    certificados y la mejor tecnología para el cuidado de tu vehículo.</p>
+                <!-- ⚠️ CAMBIAR EL NÚMERO DE WHATSAPP -->
+                <a href="https://wa.me/50768838906?text=Hola%2C%20quiero%20saber%20sobre"
+                    class="btn btn--large btn--whatsapp" target="_blank" rel="noopener noreferrer">
+                    <span class="whatsapp-icon">&#9742;</span>
+                    Contáctanos por WhatsApp
+                </a>
+                <div class="hero__stats">
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">15+</span>
+                        <span class="hero__stat-label">Años de Experiencia</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">5,000+</span>
+                        <span class="hero__stat-label">Clientes Satisfechos</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">10,000+</span>
+                        <span class="hero__stat-label">Vehículos Atendidos</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+
+        <!-- ============================================
+             SERVICIOS
+        ============================================= -->
+        <section class="services section section--alt" id="servicios">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__tag">Lo que hacemos</span>
+                    <h2 class="section__title">Nuestros <span class="text-accent">Servicios</span></h2>
+                    <p class="section__subtitle">Soluciones completas para el mantenimiento y reparación de tu vehículo
+                    </p>
+                </div>
+
+                <div class="services__grid">
+                    <!-- Servicio 1: Mecánica General Motor -->
+                    <article class="service-card" id="service-motor">
+                        <div class="service-card__icon">&#9881;</div>
+                        <h3 class="service-card__title">Mecánica General Motor</h3>
+                        <p class="service-card__desc">Diagnóstico y reparación completa del motor. Ajuste,
+                            sincronización, cambio de empaques, culata y más. Devolvemos la potencia a tu vehículo.</p>
+                    </article>
+
+                    <!-- Servicio 2: Lubricantes y Filtración -->
+                    <article class="service-card" id="service-lubricantes">
+                        <div class="service-card__icon">&#9670;</div>
+                        <h3 class="service-card__title">Lubricantes y Filtración</h3>
+                        <p class="service-card__desc">Cambio de aceite, filtros de aire, aceite y combustible. Usamos
+                            lubricantes premium para prolongar la vida útil de tu motor.</p>
+                    </article>
+
+                    <!-- Servicio 3: Suspensión y Dirección -->
+                    <article class="service-card" id="service-suspension">
+                        <div class="service-card__icon">&#8645;</div>
+                        <h3 class="service-card__title">Suspensión y Dirección</h3>
+                        <p class="service-card__desc">Reparación y mantenimiento de amortiguadores, resortes, rótulas,
+                            terminales de dirección y alineación para un manejo seguro.</p>
+                    </article>
+
+                    <!-- Servicio 4: Frenos -->
+                    <article class="service-card" id="service-frenos">
+                        <div class="service-card__icon">&#9899;</div>
+                        <h3 class="service-card__title">Frenos</h3>
+                        <p class="service-card__desc">Inspección, ajuste y reemplazo de pastillas, discos, tambores y
+                            sistema hidráulico de frenos. Tu seguridad es nuestra prioridad.</p>
+                    </article>
+
+
+                    <!-- Servicio 6: Revisión Vehicular -->
+                    <article class="service-card" id="service-revision">
+                        <div class="service-card__icon">&#9745;</div>
+                        <h3 class="service-card__title">Revisión Vehicular</h3>
+                        <p class="service-card__desc">Preparación completa para la revisión técnico-mecánica.
+                            Verificamos todos los puntos de inspección para que apruebes sin contratiempos.</p>
+                    </article>
+
+                    <!-- Servicio 7: Revisado General -->
+                    <article class="service-card" id="service-revisado">
+                        <div class="service-card__icon">&#128270;</div>
+                        <h3 class="service-card__title">Revisado General</h3>
+                        <p class="service-card__desc">Inspección integral de 50+ puntos de control. Detectamos problemas
+                            antes de que se conviertan en reparaciones costosas.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             NUESTROS EQUIPOS
+        ============================================= -->
+        <section class="mechanics section" id="mecanicos">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__tag">Tecnología</span>
+                    <h2 class="section__title">Nuestros <span class="text-accent">Equipos</span></h2>
+                    <p class="section__subtitle">Contamos con tecnología de punta para el cuidado de tu vehículo</p>
+                </div>
+
+                <div class="mechanics__grid">
+                    <!-- Equipo 1: Alineadora -->
+                    <article class="mechanic-card" id="equipo-1">
+                        <div class="mechanic-card__image-wrapper">
+                            <img src="https://placehold.co/300x300/1E3A8A/FFFFFF?text=Alineadora+3D"
+                                alt="Alineadora 3D profesional" class="mechanic-card__image" loading="lazy">
+                        </div>
+                        <div class="mechanic-card__info">
+                            <h3 class="mechanic-card__name">Alineadora 3D</h3>
+                            <span class="mechanic-card__specialty">Precisión Láser</span>
+                            <p class="mechanic-card__bio">Tecnología de precisión para garantizar el desgaste uniforme
+                                de tus llantas y una conducción segura.</p>
+                        </div>
+                    </article>
+
+                    <!-- Equipo 2: Balanceadora -->
+                    <article class="mechanic-card" id="equipo-2">
+                        <div class="mechanic-card__image-wrapper">
+                            <img src="https://placehold.co/300x300/1E3A8A/FFFFFF?text=Balanceadora"
+                                alt="Balanceadora digital de llantas" class="mechanic-card__image" loading="lazy">
+                        </div>
+                        <div class="mechanic-card__info">
+                            <h3 class="mechanic-card__name">Balanceadora Digital</h3>
+                            <span class="mechanic-card__specialty">Equilibrio Perfecto</span>
+                            <p class="mechanic-card__bio">Elimina vibraciones y asegura un rodaje suave mediante el
+                                equilibrado perfecto de cada rueda.</p>
+                        </div>
+                    </article>
+
+                    <!-- Equipo 3: Desarmadora -->
+                    <article class="mechanic-card" id="equipo-3">
+                        <div class="mechanic-card__image-wrapper">
+                            <img src="https://placehold.co/300x300/1E3A8A/FFFFFF?text=Desarmadora"
+                                alt="Desarmadora de llantas profesional" class="mechanic-card__image" loading="lazy">
+                        </div>
+                        <div class="mechanic-card__info">
+                            <h3 class="mechanic-card__name">Desarmadora de Llantas</h3>
+                            <span class="mechanic-card__specialty">Montaje Seguro</span>
+                            <p class="mechanic-card__bio">Equipo profesional para el montaje y desmontaje seguro de
+                                llantas, protegiendo tus rines.</p>
+                        </div>
+                    </article>
+
+                    <!-- Equipo 4: Elevador -->
+                    <article class="mechanic-card" id="equipo-4">
+                        <div class="mechanic-card__image-wrapper">
+                            <img src="https://placehold.co/300x300/1E3A8A/FFFFFF?text=Elevadores"
+                                alt="Elevador automotriz hidráulico" class="mechanic-card__image" loading="lazy">
+                        </div>
+                        <div class="mechanic-card__info">
+                            <h3 class="mechanic-card__name">Elevadores Automotriz</h3>
+                            <span class="mechanic-card__specialty">Inspección Total</span>
+                            <p class="mechanic-card__bio">Sistemas de elevación certificados que permiten una inspección
+                                detallada y segura de la parte inferior de tu vehículo.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             HORARIOS
+        ============================================= -->
+        <section class="schedule section section--alt" id="horarios">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__tag">Visítanos</span>
+                    <h2 class="section__title">Horarios de <span class="text-accent">Atención</span></h2>
+                    <p class="section__subtitle">Estamos disponibles para atenderte cuando lo necesites</p>
+                </div>
+
+                <div class="schedule__grid">
+                    <!-- Tabla de horarios -->
+                    <div class="schedule__table-wrapper">
+                        <table class="schedule__table" aria-label="Horarios de atención del taller">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Día</th>
+                                    <th scope="col">Horario</th>
+                                    <th scope="col">Estado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Lunes a Viernes</td>
+                                    <td>8:00 AM – 5:00 PM</td>
+                                    <td><span class="schedule__status schedule__status--open">Abierto</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Sábado</td>
+                                    <td>8:00 AM – 4:00 PM</td>
+                                    <td><span class="schedule__status schedule__status--half">Abierto</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Domingo</td>
+                                    <td>Cerrado</td>
+                                    <td><span class="schedule__status schedule__status--closed">Cerrado</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="schedule__note">Días feriados o nacionales cerrado, igual que semana santa, carnavales
+                            y días festivos.</p>
+                    </div>
+
+                    <!-- Info de contacto -->
+                    <div class="schedule__contact">
+                        <h3 class="schedule__contact-title">Información de Contacto</h3>
+
+                        <div class="schedule__contact-item">
+                            <span class="schedule__contact-icon">&#128205;</span>
+                            <div>
+                                <strong>Dirección</strong>
+
+                                <p>C. 11 de Octubre 74-5, Chitré, Provincia de Herrera al frente de la policía</p>
+                            </div>
+                        </div>
+
+                        <div class="schedule__contact-item">
+                            <span class="schedule__contact-icon">&#128222;</span>
+                            <div>
+                                <strong>Teléfono</strong>
+                                <!-- ⚠️ CAMBIAR: Insertar número telefónico real -->
+                                <p><a href="https://wa.me/50768838906">+507 6883-8906</a></p>
+                                <p>+507 996-5362 </p>
+                            </div>
+                        </div>
+
+                        <div class="schedule__contact-item">
+                            <span class="schedule__contact-icon">&#9993;</span>
+                            <div>
+                                <strong>Email</strong>
+                                <!-- ⚠️ CAMBIAR: Insertar correo electrónico real -->
+                                <p><a
+                                        href="mailto:Autocentroytalleruniversal@gmail.com">Autocentroytalleruniversal@gmail.com</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="schedule__contact-item">
+                            <span class="schedule__contact-icon">&#128172;</span>
+                            <div>
+                                <strong>WhatsApp</strong>
+                                <!-- ⚠️ CAMBIAR: Insertar número de WhatsApp real -->
+                                <p><a href="https://wa.me/50768838906" target="_blank" rel="noopener noreferrer">+507
+                                        6883-8906</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             Contáctanos (CTA Section)
+        ============================================= -->
+        <section class="cta-section" id="contacto">
+            <div class="cta-section__overlay"></div>
+            <div class="container cta-section__content">
+                <h2 class="cta-section__title">¿Listo para dejar tu vehículo en las mejores manos?</h2>
+                <p class="cta-section__text">Contáctanos ahora por WhatsApp y recibe atención personalizada. ¡Nuestro
+                    equipo te está esperando!</p>
+                <!-- ⚠️ CAMBIAR EL NÚMERO DE WHATSAPP -->
+                <a href="https://wa.me/50768838906?text=Hola%2C%20me gustaría%20conocer%20sobre%"
+                    class="btn btn--whatsapp btn--xlarge" target="_blank" rel="noopener noreferrer"
+                    aria-label="Contáctanos por WhatsApp">
+                    <span class="whatsapp-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                            <path
+                                d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.1 1.514 5.828L0 24l6.335-1.48A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.887 9.887 0 0 1-5.031-1.378l-.361-.214-3.741.981.998-3.648-.235-.374A9.86 9.86 0 0 1 2.1 12c0-5.464 4.436-9.9 9.9-9.9 5.465 0 9.9 4.436 9.9 9.9 0 5.464-4.435 9.9-9.9 9.9z" />
+                        </svg>
+                    </span>
+                    Contáctanos por WhatsApp
+                </a>
+                <p class="cta-section__sub">Respuesta garantizada en menos de 30 minutos durante horario laboral</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================
+         FOOTER
+    ============================================= -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <!-- Columna 1: Info del taller -->
+                <div class="footer__col">
+                    <a href="#inicio" class="footer__logo" aria-label="Auto Centro y Taller Universal - Inicio">
+                        <span class="logo__text"><strong>Auto</strong> <strong> Centro </strong>
+                            <strong> Y </strong><strong> Taller </strong><strong> Universal </strong></span>
+                    </a>
+                    <p class="footer__desc">Servicio automotriz profesional con más de 15 años de experiencia. Confía tu
+                        vehículo a los expertos.</p>
+                    <div class="footer__social">
+                        <!-- ⚠️ CAMBIAR: Insertar URLs reales de redes sociales -->
+                        <a href="https://www.youtube.com/" class="footer__social-link" aria-label="Instagram"
+                            title="Síguenos en Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-instagram">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Columna 2: Enlaces rápidos -->
+                <div class="footer__col">
+                    <h3 class="footer__heading">Enlaces Rápidos</h3>
+                    <ul class="footer__links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#mecanicos">Equipos</a></li>
+                        <li><a href="#horarios">Horarios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Servicios -->
+                <div class="footer__col">
+                    <h3 class="footer__heading">Servicios</h3>
+                    <ul class="footer__links">
+                        <li><a href="#service-motor">Mecánica General</a></li>
+                        <li><a href="#service-lubricantes">Mantenimientos</a></li>
+                        <li><a href="#service-suspension">Suspensión y Dirección</a></li>
+                        <li><a href="#service-frenos">Frenos</a></li>
+                        <li><a href="#service-revision">Revisión Vehicular</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 4: Contacto -->
+                <div class="footer__col">
+                    <h3 class="footer__heading">Contacto</h3>
+                    <ul class="footer__contact">
+                        <li>
+                            <span>&#128205;</span>
+                            <span>C. 11 de Octubre 74-5, Chitré, Provincia de Herrera al frente de la policia</span>
+                        </li>
+                        <li>
+                            <span>&#128222;</span>
+                            <a href="tel:+50768838906">+507 6883-8906</a>
+                        </li>
+                        <li>
+                            <span>&#9993;</span>
+                            <a
+                                href="mailto:Autocentroytalleruniversal@gmail.com">Autocentroytalleruniversal@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- footer bottom -->
+            <div class="footer__bottom">
+                <p>&copy; <span id="currentYear"></span> Auto Centro y Taller Universal. Todos los derechos reservados.
+                </p>
+                <p>Diseñado con &#10084; para nuestros clientes</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================
+         BOTÓN DE WHATSAPP
+    ============================================= -->
+    <a href="https://wa.me/50768838906?text=Hola%2C%20necesito%20información%20sobre%20sus%20servicios"
+        class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contáctanos por WhatsApp"
+        title="¡Escríbenos por WhatsApp!">
+        <svg class="whatsapp-float__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="35"
+            height="35" fill="currentColor">
+            <path
+                d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-5.5-2.8-23.2-8.5-44.2-27.1-16.4-14.6-27.4-32.7-30.6-38.2-3.2-5.6-.3-8.6 2.4-11.3 2.5-2.4 5.5-6.4 8.3-9.6 2.8-3.2 3.7-5.5 5.5-9.2 1.9-3.7 1-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 13.3 5.7 23.7 9.1 31.7 11.7 13.3 4.2 25.4 3.6 35.2 2.1 10.8-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+        </svg>
+        <span class="whatsapp-float__pulse"></span>
+    </a>
+
+    <script>
+        // Año actual en el footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Menú hamburguesa
+        const menuToggle = document.getElementById('menuToggle');
+        const mainNav = document.getElementById('mainNav');
+        const navLinks = document.querySelectorAll('.nav__link');
+
+        menuToggle.addEventListener('click', () => {
+            const isOpen = mainNav.classList.toggle('nav--open');
+            menuToggle.classList.toggle('menu-toggle--active');
+            menuToggle.setAttribute('aria-expanded', isOpen);
+            document.body.style.overflow = isOpen ? 'hidden' : '';
+        });
+
+        // Cerrar menú al hacer click en un enlace
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mainNav.classList.remove('nav--open');
+                menuToggle.classList.remove('menu-toggle--active');
+                menuToggle.setAttribute('aria-expanded', 'false');
+                document.body.style.overflow = '';
+            });
+        });
+
+        // Header con efecto scroll (sticky con sombra)
+        const header = document.getElementById('header');
+        let lastScroll = 0;
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            if (currentScroll > 50) {
+                header.classList.add('header--scrolled');
+            } else {
+                header.classList.remove('header--scrolled');
+            }
+            lastScroll = currentScroll;
+        }, { passive: true });
+
+        // Intersection Observer para animaciones de entrada
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Observar elementos animables
+        document.querySelectorAll('.service-card, .mechanic-card, .about__text, .about__image-wrapper, .schedule__table-wrapper, .schedule__contact').forEach(el => {
+            el.classList.add('animate-target');
+            observer.observe(el);
+        });
+    </script>
+
+</body>
+
+</html>
