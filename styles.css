@@ -1438,6 +1438,35 @@ table {
     margin-top: var(--spacing-xs);
 }
 
+/* 8-card grid variant */
+.products__grid--8 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* CTA between subsections */
+.products__cta {
+    text-align: center;
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-sm);
+}
+
+.btn--cta-section {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: var(--font-size-md);
+    font-weight: 700;
+    padding: 0.85rem 2rem;
+    border-radius: var(--radius-2xl);
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+    transition: all var(--transition-base);
+}
+
+.btn--cta-section:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 28px rgba(37, 211, 102, 0.45);
+}
+
 
 
 /* ============================================
