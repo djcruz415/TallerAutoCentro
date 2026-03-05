@@ -1735,11 +1735,14 @@ table {
     .hero__stats {
         flex-direction: column;
         gap: var(--spacing-lg);
+        align-items: center;
     }
 
     .hero__stat {
         flex-direction: row;
         gap: var(--spacing-md);
+        justify-content: center;
+        text-align: center;
     }
 
     .hero__stat-number {
