@@ -1651,6 +1651,19 @@ table {
         grid-template-columns: 1fr 1fr;
         gap: var(--spacing-2xl);
     }
+
+    .products__grid,
+    .products__grid--8 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .carousel-card {
+        flex: 0 0 240px;
+    }
+
+    .carousel-card__img {
+        height: 150px;
+    }
 }
 
 
@@ -1751,6 +1764,29 @@ table {
         gap: var(--spacing-sm);
         text-align: center;
     }
+
+    .products__grid,
+    .products__grid--8 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-md);
+    }
+
+    .carousel-wrapper {
+        padding: 0 2.5rem;
+    }
+
+    .carousel-card {
+        flex: 0 0 220px;
+    }
+
+    .carousel-card__img {
+        height: 130px;
+    }
+
+    .btn--cta-section {
+        font-size: var(--font-size-sm);
+        padding: 0.7rem 1.5rem;
+    }
 }
 
 
@@ -1817,6 +1853,41 @@ table {
     /* Schedule table responsive */
     .schedule__table-wrapper {
         overflow-x: auto;
+    }
+
+    .products__grid,
+    .products__grid--8 {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+
+    .products__subtitle {
+        font-size: var(--font-size-lg);
+    }
+
+    .carousel-wrapper {
+        padding: 0 2rem;
+    }
+
+    .carousel-card {
+        flex: 0 0 200px;
+    }
+
+    .carousel-card__img {
+        height: 120px;
+    }
+
+    .carousel-btn {
+        width: 32px;
+        height: 32px;
+        font-size: 1rem;
+    }
+
+    .btn--cta-section {
+        font-size: var(--font-size-xs);
+        padding: 0.6rem 1.2rem;
+        width: 100%;
+        justify-content: center;
     }
 }
 
