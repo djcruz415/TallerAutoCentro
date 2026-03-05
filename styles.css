@@ -1333,6 +1333,17 @@ table {
     justify-content: center;
 }
 
+.product-card__img-wrapper>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+}
+
+.product-card:hover .product-card__img-wrapper>img {
+    transform: scale(1.05);
+}
+
 .product-card__img-wrapper--empty {
     background: linear-gradient(135deg, #e0e7ef 0%, #c7d2de 100%);
 }
