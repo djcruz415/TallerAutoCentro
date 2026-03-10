@@ -682,6 +682,33 @@ table {
 /* ============================================
    SERVICES SECTION
    ============================================ */
+
+/* ⚠️ IMAGEN DE FONDO: Cambia la URL de la imagen aquí */
+.services.section--alt {
+    position: relative;
+    background:
+        linear-gradient(to bottom, rgba(15, 23, 42, 0.82), rgba(30, 58, 138, 0.78)),
+        url('assets/images/local3.jpeg') center/cover no-repeat fixed;
+    background-color: var(--color-bg-dark);
+}
+
+.services .section__tag {
+    background: rgba(59, 130, 246, 0.25);
+    color: var(--color-accent-light);
+}
+
+.services .section__title {
+    color: var(--color-secondary);
+}
+
+.services .section__title .text-accent {
+    color: var(--color-accent-light);
+}
+
+.services .section__subtitle {
+    color: rgba(255, 255, 255, 0.8);
+}
+
 .services__grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -689,12 +716,13 @@ table {
 }
 
 .service-card {
-    background: var(--color-secondary);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
     border-radius: var(--radius-xl);
     padding: var(--spacing-2xl);
     text-align: center;
     transition: all var(--transition-slow);
-    border: 1px solid var(--color-border);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     position: relative;
     overflow: hidden;
 }
@@ -714,8 +742,9 @@ table {
 
 .service-card:hover {
     transform: translateY(-8px);
-    box-shadow: var(--shadow-xl);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     border-color: transparent;
+    background: rgba(255, 255, 255, 1);
 }
 
 .service-card:hover::before {
@@ -734,6 +763,11 @@ table {
     color: var(--color-primary);
     border-radius: var(--radius-xl);
     transition: all var(--transition-base);
+}
+
+.service-card__icon svg {
+    width: 32px;
+    height: 32px;
 }
 
 .service-card:hover .service-card__icon {
