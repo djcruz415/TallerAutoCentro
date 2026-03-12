@@ -751,29 +751,27 @@ table {
     transform: scaleX(1);
 }
 
-.service-card__icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 70px;
-    height: 70px;
+.service-card__image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 160px;
     margin: 0 auto var(--spacing-lg);
-    font-size: 2rem;
-    background: linear-gradient(135deg, rgba(30, 58, 138, 0.08), rgba(59, 130, 246, 0.12));
-    color: var(--color-primary);
-    border-radius: var(--radius-xl);
-    transition: all var(--transition-base);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 3px solid var(--color-accent-light);
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.2);
+    transition: border-color var(--transition-base), transform var(--transition-base);
 }
 
-.service-card__icon svg {
-    width: 32px;
-    height: 32px;
+.service-card:hover .service-card__image-wrapper {
+    border-color: var(--color-primary);
+    transform: scale(1.02);
 }
 
-.service-card:hover .service-card__icon {
-    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
-    color: var(--color-secondary);
-    transform: scale(1.1);
+.service-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .service-card__title {
@@ -1394,6 +1392,11 @@ table {
     transition: transform var(--transition-slow);
 }
 
+.product-card__img-wrapper--contain>img {
+    object-fit: contain;
+
+}
+
 .product-card:hover .product-card__img-wrapper>img {
     transform: scale(1.05);
 }
@@ -1661,9 +1664,73 @@ table {
     right: 0;
 }
 
+/* ============================================
+   SCROLL ANIMATIONS (Intersection Observer)
+   ============================================ */
+.animate-target {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+}
 
+.animate-target.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
 
+/* Stagger grid items delays automatically */
+.services__grid .animate-target:nth-child(1) {
+    transition-delay: 0.1s;
+}
 
+.services__grid .animate-target:nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+.services__grid .animate-target:nth-child(3) {
+    transition-delay: 0.3s;
+}
+
+.services__grid .animate-target:nth-child(4) {
+    transition-delay: 0.4s;
+}
+
+.services__grid .animate-target:nth-child(5) {
+    transition-delay: 0.5s;
+}
+
+.services__grid .animate-target:nth-child(6) {
+    transition-delay: 0.6s;
+}
+
+.services__grid .animate-target:nth-child(7) {
+    transition-delay: 0.7s;
+}
+
+.mechanics__grid .animate-target:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.mechanics__grid .animate-target:nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+.mechanics__grid .animate-target:nth-child(3) {
+    transition-delay: 0.3s;
+}
+
+.mechanics__grid .animate-target:nth-child(4) {
+    transition-delay: 0.4s;
+}
+
+.mechanics__grid .animate-target:nth-child(5) {
+    transition-delay: 0.5s;
+}
+
+.mechanics__grid .animate-target:nth-child(6) {
+    transition-delay: 0.6s;
+}
 
 /* ============================================
    RESPONSIVE - TABLET (max-width: 1024px)
