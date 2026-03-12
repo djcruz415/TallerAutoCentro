@@ -219,6 +219,19 @@ table {
     box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
 }
 
+.btn--whatsapp-header {
+    background: var(--color-whatsapp);
+    color: var(--color-secondary);
+    box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4);
+    /* Retains the font-size and padding from .btn base class to match the original --accent look */
+}
+
+.btn--whatsapp-header:hover {
+    background: var(--color-whatsapp-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+}
+
 .btn--large {
     padding: 1rem 2.5rem;
     font-size: var(--font-size-md);
